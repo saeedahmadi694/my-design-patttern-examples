@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <Folder Include="Patterns\Builder\" />
+    <Folder Include="Patterns\Strategy\" />
   </ItemGroup>
 
 </Project>
