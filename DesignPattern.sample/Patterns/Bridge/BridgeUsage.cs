@@ -15,7 +15,6 @@ public class BridgeUsage
     {
        var swordSton = new Sword(new Ston());
        var sworIce = new Sword(new Ston());
-
        var fireBow = new Bow(new Fire());
 
         swordSton.Attack();
