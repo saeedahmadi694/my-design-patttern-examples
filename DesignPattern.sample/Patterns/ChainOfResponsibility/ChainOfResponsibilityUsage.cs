@@ -11,14 +11,12 @@ public class ChainOfResponsibilityUsage
 {
     public void Run()
     {
-        // Set up the chain
         var armorHandler = new ArmorHandler();
         var shieldHandler = new ShieldHandler();
         var magicResistanceHandler = new MagicResistanceHandler();
 
         armorHandler.SetNext(shieldHandler.SetNext(magicResistanceHandler));
 
-        // Simulate taking damage
         int damage = 50;
         string damageType = "Magic";
 

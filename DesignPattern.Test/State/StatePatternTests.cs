@@ -30,11 +30,9 @@ public class CharacterControllerTests : IDisposable
     [Fact]
     public void TurnLeft_FromIdle_PrintsWalkLeftAndTransitionsToMoveLeft()
     {
-        // Act
         _controller.TurnLeft();
         _controller.TurnLeft();
 
-        // Assert
         var lines = _consoleOutput.ToString()
             .Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
         Assert.Equal("Walk left.", lines[0]);
@@ -44,11 +42,9 @@ public class CharacterControllerTests : IDisposable
     [Fact]
     public void TurnRight_FromIdle_PrintsWalkRightAndTransitionsToMoveRight()
     {
-        // Act
         _controller.TurnRight();
         _controller.TurnRight();
 
-        // Assert
         var lines = _consoleOutput.ToString()
             .Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
         Assert.Equal("Walk right.", lines[0]);
@@ -58,11 +54,9 @@ public class CharacterControllerTests : IDisposable
     [Fact]
     public void Jump_FromIdle_PrintsStartJumpingAndTransitionsToJump()
     {
-        // Act
         _controller.Jump();
         _controller.Jump();
 
-        // Assert
         var lines = _consoleOutput.ToString()
             .Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
         Assert.Equal("Start jumping.", lines[0]);
@@ -72,11 +66,9 @@ public class CharacterControllerTests : IDisposable
     [Fact]
     public void Defend_FromIdle_PrintsStartDefendingAndTransitionsToDefend()
     {
-        // Act
         _controller.Defend();
         _controller.Defend();
 
-        // Assert
         var lines = _consoleOutput.ToString()
             .Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
         Assert.Equal("Start defending.", lines[0]);
@@ -86,11 +78,9 @@ public class CharacterControllerTests : IDisposable
     [Fact]
     public void Attack_FromIdle_PrintsStartAttackingAndTransitionsToAttack()
     {
-        // Act
         _controller.Attack();
         _controller.Attack();
 
-        // Assert
         var lines = _consoleOutput.ToString()
             .Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
         Assert.Equal("Start attacking.", lines[0]);

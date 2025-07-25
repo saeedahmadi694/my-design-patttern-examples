@@ -2,7 +2,7 @@
 
 public class MagicResistanceHandler : DamageHandler
 {
-    private double resistance = 0.2; // 20% resistance
+    private double resistance = 0.2; 
 
     public override void HandleRequest(ref int damage, string damageType)
     {
