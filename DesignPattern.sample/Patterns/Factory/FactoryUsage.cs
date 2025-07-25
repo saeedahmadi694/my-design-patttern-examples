@@ -1,7 +1,6 @@
 ﻿using DesignPattern.sample.Patterns.Decorator.Abilities;
-using DesignPattern.sample.Patterns.Factory;
 
-namespace DesignPattern.sample.Patterns.FlyWeight;
+namespace DesignPattern.sample.Patterns.Factory;
 
 public class FactoryUsage
 {
